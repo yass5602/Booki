@@ -284,6 +284,9 @@ a {
     gap: 4px;
     background-color:#FFFFFF ;
 }
+.hebergementCardscontainer:hover {
+    transform: translate(0px, -4px);
+}
 .imageContainer{
     width: 250.33px;
     height: 124px;
@@ -337,7 +340,9 @@ a {
     display: flex;
     margin-top: 33px;
 }
-
+.populaires-cards .card:hover {
+    transform: translate(0px, -4px);
+}
 .populaires-cards img {
     width: 33%;
     height: 136px;
@@ -376,8 +381,73 @@ a {
     flex-direction: column;
     gap: 30px;
 }
-
-
+.activityCards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .activityCards a {
+    width: 297.5px;
+    height: 439px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px 0px #0000001a;
+    transition: all 0.3s ease;
+  }
+  .activityOneCard {
+    width: 100%;
+    height: 100%;
+  }
+  .activityCards a:hover {
+    transform: translate(0px, -4px);
+  }
+  .activityCardImage {
+    width: 100%;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .activityCardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    aspect-ratio: 1/1;
+  }
+  .activityCardTxt {
+    width: 100%;
+    height: 59px;
+    border-radius: 0px 0px 20px 20px;
+    padding: 20px 19px;
+    align-content: center;
+  }
+  .activityCardTitle {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+  }
+  /****** Footer ***********/
+footer {
+    width: 100%;
+    max-width: 1340px;
+    min-height: 163px;
+    background-color: var(--main-bg-color);
+    display: flex;
+}
+.footerSection {
+    width: calc(100% / 3);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footerLink{
+    color: #000;
+}
+.footerLink:hover{
+    color: #0056b3;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
