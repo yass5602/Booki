@@ -6,6 +6,9 @@
     list-style: none;
     font-family: 'Raleway', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 .header {
     position: absolute;
     width: 1440px;
@@ -243,6 +246,7 @@ a {
 }
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
