@@ -322,6 +322,9 @@ a {
     font-weight: 700;
     line-height: 21.13px;
 }
+.afficherPlus:hover{
+    color: #0065FC;
+}
 /****** Populaires ***********/
 .populaires {
     display: flex;
