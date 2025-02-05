@@ -29,6 +29,11 @@ html{
     --filter-bg-color: #DEEBFF;
     --border-color:#d9d9d9;
     --white:#ffffff;
+
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+    --xl: 22px;
 }
 .logo img{
     padding: 30px 0px 30px 0px;
@@ -205,12 +210,14 @@ body {
 }
 
 .main-container {
-    background-color:white;
-    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
-}
+  }
 
 a {
     color: inherit;
@@ -246,7 +253,6 @@ a {
 }
 
 /****** Hebergements And Populaires ***********/
-
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -461,39 +467,89 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .main-container {
+      padding: 0 20px !important;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
-    }
-
-    .hebergements {
+      }
+    .hebergement {
         width: 100%;
+      }
+    .hebergementCardscontainer-wrap {
+        margin: auto;
     }
-
+    .filters {
+        flex-direction: column;
+      }
     .populaires {
         width: 100%;
         margin-top: 50px;
-    }
-
+      }
     .populaires-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-
+      }
     .populaires-cards a {
         width: 30%;
-    }
-
+      }
     .populaires-cards .card-title {
         font-size: 14px;
-    }
-
+      }
     .populaires-cards .card-subtitle {
         font-size: 13px;
+      }
+    .activityCards {
+        margin: center;
+        height: 270px;
+        width: 864px;
     }
+    .activityOneCard {
+        height: 70px;
+      }
+    .activityCardImage {
+        height: 270px;
+        width: 193.5px;
+    }
+    .activityCardTxt {
+        height: 70px;
+    }
+    .activityOneCard img {
+        height: 270px;
+        width: 193.5px;
+        object-fit: cover;
+      }
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+/* Ajustements pour les mobiles */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .hebergements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hebergement {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    .activites {
+        flex-direction: column;
+        align-items: center;
+    }
+    .activite {
+        width: 90%;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu a {
+        width: 100%;
+        text-align: center;
+    }
 }
