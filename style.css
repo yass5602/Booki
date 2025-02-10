@@ -188,6 +188,7 @@ main {
      font-weight: 700;
      padding: 4px 19px;
      cursor: pointer;
+     overflow: hidden;
 }
 .filters-button img {
     font-size: 20px;
@@ -347,7 +348,12 @@ main {
 .populars-cards .card-rating {
     margin-bottom: 5px;
 }
-
+.populars a:hover{
+    color: #0065FC;
+}
+.card:hover{
+    transform: translate(0px, -4px);
+}
 /*Activités à Marseille 3eme partie du site*/
 .activities {
     display: flex;
@@ -523,7 +529,10 @@ header li:hover {
 .filters-section {
       margin: 0 20px;
 }
-  
+
+.filters-button {
+    font-size: small;
+}
 .searchbar {
       width: 100% !important;
 }
