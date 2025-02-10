@@ -60,19 +60,19 @@ header ul {
     margin: 0px;
   }
   
-  header ul li {
+header ul li {
     list-style: none;
     padding-top: var(--md);
     font-size: var(--md);
     border-top: 2px solid transparent;
   }
   
-  header ul li:hover {
+header ul li:hover {
     color: var(--main-color);
     border-top-color: var(--main-color);
   }
   
-  main {
+main {
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -80,7 +80,25 @@ header ul {
 .fa-solid {
     color: var(--main-color);
 }
-
+.filters-section {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+  
+.filters-section h1,
+.filters-section p {
+    margin: 0;
+}
+  
+.filters-section h1 {
+    margin-bottom: 8px;
+    font-size: var(--xl);
+}
+  
+.filters-section p {
+    font-size: var(--md);
+}
 
 
 .search-bar {
