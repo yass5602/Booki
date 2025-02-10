@@ -32,41 +32,46 @@
         </header>
 
         <main>
+            <!-- Section slogan/searchbar/filter/info-->
             <section class="filters-section">
             <div>
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre-ville ou en pleine nature</p>
             </div>
-            
-            <div class="search-bar">
+
+            <div class="searchbar">
                 <!--Bouton de localisation-->
                 <div class="location-icon">
                     <img src="./icons/localisation.svg" alt="Localisation">
                 </div>
+
                 <!--Champ de recherche-->
-                <input type="text"  placeholder="Marseille, France" class="search-input"/>
+                <input type="text"  placeholder="Marseille, France"/>
+
                 <!--Bouton "Rechercher"-->
-                <button class="search-button">Rechercher</button>
+                <button>Rechercher</button>
                 <button class="search-mobile"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-            <div class="filtersContainer">
-                <p class="filtersTitle">Filtres</p>
-                <div class="filtersButtonsContainer">
-                    <button class="filterButton">
+
+            <div class="filters">
+                <h3>Filtres</h3>
+
+                <nav class="filters-list">
+                    <button class="filters-button">
                         <img src="./icons/prix.svg">Economique
                     </button>
-                    <button class="filterButton">
+                    <button class="filters-button">
                         <img src="./icons/famille.svg">Familial
                     </button>
-                    <button class="filterButton">
+                    <button class="filters-button">
                         <img src="./icons/romantique.svg">Romantique
                     </button>
-                    <button class="filterButton">
+                    <button class="filters-button">
                         <img src="./icons/pepite.svg">Nos pépites
                     </button>
-                </div>
+                </nav>
             </div>
-            <div class="InfoContainer">
+            <div class="filters-info">
                 <img src="./icons/Icon.svg">
                 <p class="info">
                     Plus de 500 logements sont disponibles dans cette ville
