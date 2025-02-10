@@ -242,6 +242,9 @@ main {
 }
 
 /****** Hebergements ***********/
+.herbergement{
+    width: 65%;
+}
 .hebergement{    
     display: flex;
     flex-direction: column;
@@ -297,46 +300,33 @@ main {
     font-size: var(--lg);
     font-weight: 700;
 }
-.afficherPlus{
-    margin-top: 40px;
-    width: 811px;
-    height: 21px;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21.13px;
-}
-.afficherPlus:hover{
+.hebergement a:hover{
     color: #0065FC;
 }
 /****** Populaires ***********/
-.populaires {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.populars {
     width: 32%;
 }
-
-.populaires-title {
+  
+.populars-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.populaires-cards .card {
+  
+.populars-cards .card {
     display: flex;
     margin-top: 33px;
 }
-.populaires-cards .card:hover {
-    transform: translate(0px, -4px);
-}
-.populaires-cards img {
+  
+.populars-cards img {
     width: 33%;
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-
-.populaires-cards .card-content {
+  
+.populars-cards .card-content {
     width: 67%;
     padding-left: 15px;
     display: flex;
@@ -344,74 +334,67 @@ main {
     justify-content: space-between;
     box-sizing: border-box;
 }
-
-.populaires-cards .card-title {
+  
+.populars-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
 }
-
-.populaires-cards .card-subtitle {
+  
+.populars-cards .card-subtitle {
     margin: 0;
 }
-
-.populaires-cards .card-rating {
+  
+.populars-cards .card-rating {
     margin-bottom: 5px;
 }
 
 /*Activités à Marseille 3eme partie du site*/
-.ThirdSection{
-    width: 100%;
-    height: 559.02px;
-    padding: 30px;
+.activities {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding: 30px;
 }
-.activityCards {
-    width: 100%;
+  
+.activities h2 {
+    font-size: var(--xl);
+}
+  
+.activities-list {
     display: flex;
-    justify-content: center;
+    width: 100%;
     gap: 30px;
-  }
-  .activityCards a {
-    width: 297.5px;
-    height: 439px;
+}
+  
+.activities-link-card {
+    display: flex;
     border-radius: 20px;
-    box-shadow: 0px 3px 15px 0px #0000001a;
-    transition: all 0.3s ease;
-  }
-  .activityOneCard {
     width: 100%;
-    height: 100%;
-  }
-  .activityCards a:hover {
+    overflow: hidden;
+    box-shadow: 0 3px 15px 0 #0000001a;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.activities-link-card:hover{
     transform: translate(0px, -4px);
-  }
-  .activityCardImage {
+}  
+.activities-list-card {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--md);
     width: 100%;
+}
+  
+.activities-list-card img {
     height: 380px;
-    border-radius: 20px 20px 0px 0px;
-  }
-  .activityCardImage img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-    aspect-ratio: 1/1;
-  }
-  .activityCardTxt {
-    width: 100%;
-    height: 59px;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 20px 20px 0 0;
+}
+  
+.activities-list-card h3 {
+    display: flex;
+    align-items: center;
     padding: 20px 19px;
-    align-content: center;
-  }
-  .activityCardTitle {
-    margin-bottom: 40px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18.78px;
-  }
+    margin: 0;
+}
   /****** Footer ***********/
 footer {
     width: 100%;
