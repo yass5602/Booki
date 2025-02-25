@@ -133,6 +133,9 @@ main {
     width: 24px;
     height: 24px;
 }
+.location-icon i {
+    color:#000;
+}
 .searchbar input {
     flex: 1;
     border:none;
