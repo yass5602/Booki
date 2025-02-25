@@ -399,7 +399,9 @@ main {
     font-size: var(--md);
     width: 100%;
 }
-  
+.activities-list-card img {
+object-fit: cover;
+}  
 .activities-list-card img {
     height: 380px;
     border-radius: 20px 20px 0 0;
