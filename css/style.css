@@ -297,13 +297,20 @@ main {
     gap: 8px;
     padding: 0 15px;
 }
-.card-content h3 {
+/* Style pour les spans qui remplacent les h3 dans la section hébergement */
+.hebergement .card-content .card-title {
+    display: block;
+    font-weight: bold;
     font-size: var(--md);
+    white-space: nowrap; /* Empêche le saut de ligne */
+    overflow: hidden;    /* Cache le texte qui dépasse */
+    text-overflow: ellipsis; /* Ajoute des points de suspension si nécessaire */
 }
 .card-content p {
     font-size: var(--sm);
+    white-space: nowrap;
 }
-.card-content h3,
+
 .card-content p {
   margin: 0;
 }
@@ -327,7 +334,12 @@ main {
     justify-content: space-between;
     align-items: center;
 }
-  
+.populars-title h2 {
+    font-weight: bold;
+    white-space: nowrap; 
+    overflow: hidden;    
+    text-overflow: ellipsis;   
+}  
 .populars-cards .card {
     display: flex;
     margin-top: 33px;
