@@ -419,7 +419,7 @@ object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
   
-.activities-list-card span {
+.activities-list-card h3 {
     display: flex;
     align-items: center;
     padding: 10px;
