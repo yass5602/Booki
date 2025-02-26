@@ -45,15 +45,7 @@ a {
 h1 {
     font-weight: bold;
 }
-h3 {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-}
+
 /*Header*/
 header {
     display: flex;
@@ -364,6 +356,11 @@ main {
 .populars-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
+        display: block;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
 }
   
 .populars-cards .card-subtitle {
@@ -422,11 +419,13 @@ object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
   
-.activities-list-card h3 {
+.activities-list-card span {
     display: flex;
     align-items: center;
-    padding: 20px 19px;
+    padding: 10px;
     margin: 0;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }
   /****** Footer ***********/
 footer {
@@ -499,11 +498,21 @@ footer {
 }
   
 .populars-cards .card-title {
-      font-size: 14px;
+    font-size: 14px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }
   
 .populars-cards .card-subtitle {
       font-size: 13px;
+      white-space: nowrap; 
+      overflow: hidden;    
+      text-overflow: ellipsis;
 }
   
 .activities-list-card {
@@ -612,7 +621,7 @@ header li:hover {
 .hebergement-section {
       grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-  
+
 .populars-cards {
       flex-direction: column;
 }
